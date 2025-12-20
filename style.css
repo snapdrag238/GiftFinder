@@ -272,3 +272,14 @@ footer {
     user-select: none;
     -webkit-user-drag: none;
 }
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.checkbox-group input {
+    width: auto;
+}
