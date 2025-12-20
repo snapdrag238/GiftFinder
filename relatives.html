@@ -70,13 +70,13 @@
                 </article>
             </div>
             <p>Не знайшли те що хотіли? Ви завжди можете звернутись до нас за новим ідеями у вкладці
-                <a href="contact.html">"Підбір"</a></li>.
+                <a href="contact.html">"Підбір"</a>.
             </p>
 
             <div style="margin-top: 30px;">
                 <h2>Незнаєте як гарно запакувати?</h2>
                 <p>Перегляньте невеличку відео-інструкцію:</p>
-                <video width="480" height="270" controls controlsList="nodownload" poster="pictures/preview.jpg">
+                <video id="player" width="480" height="270" controls poster="pictures/preview.jpg">
                     <source src="Present.mp4" type="video/mp4">
                     Ваш браузер не підтримує відео.
                 </video>
@@ -87,6 +87,10 @@
     <footer>
         <p>&copy; 2025 GiftFinder. Всі права захищено.</p>
     </footer>
+
+    <script>
+        document.getElementById('player').setAttribute('controlsList', 'nodownload');
+    </script>
 
 </body>
 </html>
