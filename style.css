@@ -209,6 +209,10 @@ footer {
     margin-top: 20px;
 }
 
+.downloadList a {
+    font-size: 18px;
+}
+
 .logoimg {
     max-width: 100%;
     height: auto;
