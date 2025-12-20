@@ -1,3 +1,4 @@
+document.getElementById('player').setAttribute('controlsList', 'nodownload');
 const audioPlayer = document.getElementById('player');
 const songTitle = document.getElementById('song-title');
 
@@ -43,4 +44,5 @@ audioPlayer.onended = nextSong;
 window.addEventListener('load', () => {
     audioPlayer.src = songs[currentSongIndex];
     songTitle.innerText = "Поточний трек: " + getCleanName(songs[currentSongIndex]);
+
 });
