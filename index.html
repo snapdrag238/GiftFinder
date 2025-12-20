@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiftFinder - Головна</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pictures/icon.png" type="image/png">
+    <link rel="icon" href="pictures/icon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">🎁GiftFinder</div>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="relatives.html">Рідні та Друзі</a></li>
+                <li><a href="students.html">Студенти</a></li>
+                <li><a href="contact.html">Підбір</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Вітаємо у GiftFinder!</h1>
+            <p>Не знаєте, що подарувати? Ми допоможемо знайти ідеальний подарунок для будь-кого: від мами до одногрупника.</p>
+            
+            <figure style="margin: 20px 0; text-align: center;">
+                <img src="pictures/Logo.png" alt="Банер подарунків" width="800" height="400" class="logoimg">
+                <figcaption class="slogan">Ми робимо свято яскравішим</figcaption>
+            </figure>
+
+            <div class="music-box">
+                <h3>Створіть собі новорічний настрій напередодні нового року</h3>
+                <p> Прослухайте нашу невеличку підбірку новорічних треків: </p>
+    
+                <p id="song-title" style="font-weight: bold; color: #ff4c4c;">Зараз грає: colorful-cat-tinsel-garlands.mp3</p>
+    
+                <audio id="player"controls controlsList="nodownload" style="width: 100%; max-width: 600px"></audio>
+    
+                    <div class="controls">
+                        <button type="button" onclick="prevSong()" class="music-btn">◀ Попередній трек</button>
+                        <button type="button" onclick="nextSong()" class="music-btn">Наступний трек ▶</button>
+                    </div>
+            </div>
+            <p class="download-info">
+                Ці аудіо не підлягають авторському праву та можуть бути завантажені за цим
+                <a href="download.html">посиланням</a></li>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GiftFinder. Всі права захищено.</p>
+    </footer>
+    
+<script src="index.js"></script>
+</body>
+</html>

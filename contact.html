@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підбір подарунка - GiftFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pictures/icon.png" type="image/png">
+    <link rel="icon" href="pictures/icon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">🎁GiftFinder</div>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="relatives.html">Рідні та Друзі</a></li>
+                <li><a href="students.html">Студенти</a></li>
+                <li><a href="contact.html">Підбір</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Допомога у виборі для знайомих (Тимчасово не працює)</h1>
+        <p>Все ще не вибрали що подарувати колезі чи дальньому знайомому? <br>
+            Заповніть форму, і ми надішлемо цікаві ідеї прямо вам на пошту.</p>
+
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Анкета отримувача</legend>
+                
+                <div class="form-group">
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email для відповіді:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Ким вам доводиться отримувач подарунка?</label>
+                    <select id="category" name="category">
+                        <option value="acquaintance">Просто знайомий</option>
+                        <option value="colleague">Колега</option>
+                        <option value="neighbor">Сусід</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Інтереси отримувача подарунка(можна обрати кілька):</label>
+                    <input type="checkbox" id="music" name="interest" value="music"> <label style="display:inline" for="music">Музика</label>
+                    <input type="checkbox" id="sport" name="interest" value="sport"> <label style="display:inline" for="sport">Спорт</label>
+                    <input type="checkbox" id="tech" name="interest" value="tech"> <label style="display:inline" for="tech">Технології</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Додаткові деталі(про отримувача подарунка, інші інтереси, побажання, виключення і тд.):</label>
+                    <textarea id="details" name="details" rows="4" placeholder="Напишіть трохи про людину..."></textarea>
+                </div>
+
+                <button type="submit">Отримати ідеї</button>
+
+                <div id="contactModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+                        <h2>Дякуємо за звернення!</h2>
+                        <p>😭Нажаль сервіс тимчасово недоступний.<br>
+                            Ми підберемо ідеї та надішлемо їх на вказану пошту коли сервіс відновить роботу.</p>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GiftFinder. Всі права захищено.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
